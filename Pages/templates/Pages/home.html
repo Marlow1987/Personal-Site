@@ -6,6 +6,34 @@
 {% endblock extra_css %}
 
 {% block content %}
-    Homepage
+<section class="career-hero">
+    <a href="#" class="hero-panel pearls" style="background-image: url('{{ pearls.bg_image }}');">
+        <div class="panel-overlay">
+            <div class="panel-content">
+                <h2>Éclat de Gemmes</h2>
+                <p>Natural Beauty. Trusted Expertise.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="#" class="hero-panel studio" style="background-image: url('{{ studio.bg_image }}');">
+        <div class="panel-overlay">
+            <div class="panel-content">
+                <h2>Orbital Syndicate</h2>
+                <p>Designing Systems. Building Worlds.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="#cat-life" class="hero-panel cat-life" style="background-image: url('{{ cat_life.bg_image }}');">
+        <div class="panel-overlay">
+            <div class="panel-content">
+                <h2>Roach & Me</h2>
+                <p>A Quiet Life Between Creations</p>
+            </div>
+        </div>
+    </a>
+
+</section>
 {% endblock content %}
     

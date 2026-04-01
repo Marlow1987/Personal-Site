@@ -1,0 +1,48 @@
+:root {
+    --primary-dark: #1a1a1a;
+    --accent-gold: #c5a059; /* For the Pearl/Gem side */
+    --accent-blue: #4a90e2; /* For the Game/Dev side */
+    --text-light: #f4f4f4;
+}
+body { 
+    font-family: 'Inter', sans-serif; 
+    margin: 0; 
+    background: #fff; 
+    color: var(--primary-dark); 
+}
+
+/* Navbar Styling */
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 5%; 
+    background: var(--primary-dark); 
+    color: white;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+}
+.nav-brand { 
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+ }
+.nav-links a { 
+    color: white; 
+    text-decoration: none; 
+    margin-left: 20px; 
+    font-size: 0.9rem; 
+}
+.nav-links a:hover { 
+    color: var(--accent-gold); 
+}
+
+/* Footer Styling */
+footer {
+    background: #f9f9f9; padding: 3rem 5%; margin-top: 50px;
+    border-top: 1px solid #eee; text-align: center;
+}
+.footer-grid { display: flex; justify-content: space-around; flex-wrap: wrap; margin-bottom: 2rem; }
+.footer-col h4 { margin-bottom: 10px; color: #888; text-transform: uppercase; font-size: 0.75rem; }
+.footer-bottom { font-size: 0.8rem; color: #aaa; border-top: 1px solid #eee; padding-top: 1rem; }

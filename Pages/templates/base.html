@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerald Bourgogne - Crafting Across Worlds</title>
+    <!-- SEO -->
+    <meta name="description" content="Gerald Bourgogne — Pearl sourcing expert, founder of Orbital Syndicate, and creator exploring beauty, systems, and life.">
+    <link rel="stylesheet" href="{% static 'style/home/base.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <a href="{% url 'Pages:home' %}">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="{% url 'Pages:home' %}">Home</a>
+                <a href="#">Éclat de Gemmes - pearl sourcing agent</a>
+                <a href="#">Orbital Syndicate - game studio</a>
+                <a href="#">Roach & Me</a>
+                <a href="#">About me</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Luxury & Trade</h4>
+                <p>Pearl Specialist</p>
+            </div>
+            <div class="footer-col">
+                <h4>Digital production</h4>
+                <p>Game Dev</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; {% now "Y" %} | Precision in Stones. Logic in Systems.
+        </div>
+    </footer>
+</body>
+</html>
